@@ -45,6 +45,15 @@ p, label, h2{
 .mb-2 {
     margin-bottom: 2%;
 }
+.error {
+    color:#CB242D;
+    margin-top:0;
+    margin-bottom:0;
+    font-weight: bolder;
+}
+.bd-danger {
+    border:#CB242D 1px solid !important;
+}
 .mb-0 {
     margin-bottom: 0.5%;
     margin-top:0.5%;
