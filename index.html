@@ -75,15 +75,26 @@
                             <form id="formId">
                                 <div class="row">
                                     <div class="col-25 mb-3">Nama <span class="sp">:</span></div>
-                                    <div class="col-75 mb-3">
+                                    <div class="col-75 mb-2">
                                         <input type="text" id="pnama" name="nama"  class="form-control" placeholder="Nama" >
+                                        <p id="error-name" class="error"></p>
                                     </div>
                                     <div class="col-25 mb-3">Tanggal Lahir <span class="sp">:</span></div>
-                                    <div class="col-75 mb-3"><input type="date" id="tanggal" name="tanggal"  class="form-control" ></div>
+                                    <div class="col-75 ">
+                                        <input type="date" id="tanggal" name="tanggal"  class="form-control" >
+                                        <p id="error-tanggal" class="error"></p>
+                                    </div>
                                     <div class="col-25 mb-3">Jenis Kelamin <span class="sp">:</span></div>
-                                    <div class="col-75 mb-3"><input type="radio" id="r1" name="jkel"value="Laki-Laki" ><label>Laki-Laki</label> <input type="radio" id="r2" name="jkel" value="Perempuan" > <label>Perempuan</label></div>
+                                    <div class="col-75 mb-3">
+                                        <input type="radio" id="r1" name="jkel"value="Laki-Laki" > <label>Laki-Laki</label>
+                                        <input type="radio" id="r2" name="jkel" value="Perempuan" > <label>Perempuan</label>
+                                        <p id="error-jkel" class="error"></p>
+                                    </div>
                                     <div class="col-25 mb-3">Pesan <span class="sp">:</span></div>
-                                    <div class="col-75 mb-3"><textarea rows="8" cols="64" id="pesan" name="pesan" class="form-control" placeholder="Ketik disini" required></textarea></div>
+                                    <div class="col-75 mb-3">
+                                        <textarea rows="8" cols="64" id="pesan" name="pesan" class="form-control" placeholder="Ketik disini" required></textarea>
+                                        <p id="error-pesan" class="error"></p>
+                                    </div>
                                     <div class="col-12 ">
                                         <!-- <button class="btn-submit mt-3" type="submit" onclick="return changeText('submitbutton');">Submit</button> -->
                                         <input class="btn-submit mt-3" type="button" id="btn1" value="Submit" />
