@@ -3,9 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>portfolio fadhil</title>
 </head>
 <body>
-    
+    <header class="sticky">
+        <nav class="nav">
+            <div class="container">
+                <a href="#" class="logo"><img src="assets/10.png" alt="logo" width="150px" ></a>
+                <a href="#home"    id="home-btn"    class="btn mobile-hide active">Home</a>
+                <a href="#profile" id="profile-btn" class="btn mobile-hide">Our Profile</a>
+                <a href="#project" id="project-btn" class="btn mobile-hide">My Project</a>
+                <a href="#message" id="message-btn" class="btn mobile-hide">Message Us</a>
+            </div>
+            <div class="col-12 desktop-hide">
+                <div class="container">
+                    <a href="#home"    id="home-btn"    class="btn active">Home</a>
+                    <a href="#profile" id="profile-btn" class="btn">Our Profile</a>
+                    <a href="#project" id="project-btn" class="btn">My Project</a>
+                    <a href="#message" id="message-btn" class="btn">Message Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" >
+            <h1><img src="assets/profile_filled_icon.png" width="32px" class="icon"> Hi <span class="qts inama">User</span>, Welcome to Website</h1>
+            <p class="mb-3 isi">ini adalah website latihan pertama</p>
+            <p class="isi">
+                Platform Pakarr didirikan dengan tujuan untuk menyediakan layanan yang berhubungan dengan jasa agency profesional. 
+                Sejak didirikan, Pakarr telah menjadi tempat bagi klien untuk mencari layanan dari berbagai tim profesional, termasuk
+                "Pakarr Tim", "Fulltimer Pakarr", “Remote Tim Pakarr”.
+                Klien dapat meminta layanan project platinum khusus dan kami akan segera mengkonfirmasi permintaan tersebut. 
+                Klien juga dapat langsung memesan layanan project yang sudah tersedia di setiap kategori spesifik kami. 
+                Tim spesialis kami di Pakarr akan mulai mengerjakan project tersebut dengan dedikasi dan profesionalisme, 
+                Pakarr terus berkomitmen untuk memberikan layanan terbaik kepada setiap klien.
+            </p>
+        </section>
+        <section id="project" class="py-5">
+            <h1 class="mb-3"><img src="assets/1096028.png" width="32px" class="icon">My porfolio</h1>
+            <div class="row">
+                <a href="https://pakarr.com/" class="me-3 text-center hvr-underline-from-center porto">
+                    <img src="assets/pakarr.png" width="150px" height="150px" class="circle">
+                    <h2>Pakarr.com</h2>
+                </a>
+                <a href="https://abaas.id/" class="me-3 text-center hvr-underline-from-center porto">
+                    <img src="assets/abaas.png" width="150px" height="150px" class="circle">
+                    <h2>Abaas.id</h2>
+                </a>
+                <a href="https://afrbroker.com/" class="me-3 text-center hvr-underline-from-center porto">
+                    <img src="assets/afr.png" width="150px" height="150px" class="circle">
+                    <h2>Afrbroker.com</h2>
+                </a>
+                <a href="#" class="me-3 text-center hvr-underline-from-center porto">
+                    <img src="assets/craign.png" width="150px" height="150px" class="circle">
+                    <h2>Craign</h2>
+                </a>
+                <a href="#" class="me-3 text-center hvr-underline-from-center porto">
+                    <img src="assets/gklinik.png" width="150px" height="150px" class="circle">
+                    <h2>Gklinik</h2>
+                </a>
+            </div>
+        </section>
+        <section id="message">
+            <div class="Container1">
+                <div class="row">
+                    <div class="col-4">
+                        <h1 class="mb-5"><img src="assets/message.png" width="32px" class="icon"> Message Us</h1>
+                        <div class="container2">
+                            <form id="formId">
+                                <div class="row">
+                                    <div class="col-25 mb-3">Nama <span class="sp">:</span></div>
+                                    <div class="col-75 mb-3">
+                                        <input type="text" id="pnama" name="nama"  class="form-control" placeholder="Nama" >
+                                    </div>
+                                    <div class="col-25 mb-3">Tanggal Lahir <span class="sp">:</span></div>
+                                    <div class="col-75 mb-3"><input type="date" id="tanggal" name="tanggal"  class="form-control" ></div>
+                                    <div class="col-25 mb-3">Jenis Kelamin <span class="sp">:</span></div>
+                                    <div class="col-75 mb-3"><input type="radio" id="r1" name="jkel"value="Laki-Laki" ><label>Laki-Laki</label> <input type="radio" id="r2" name="jkel" value="Perempuan" > <label>Perempuan</label></div>
+                                    <div class="col-25 mb-3">Pesan <span class="sp">:</span></div>
+                                    <div class="col-75 mb-3"><textarea rows="8" cols="64" id="pesan" name="pesan" class="form-control" placeholder="Ketik disini" required></textarea></div>
+                                    <div class="col-12 ">
+                                        <!-- <button class="btn-submit mt-3" type="submit" onclick="return changeText('submitbutton');">Submit</button> -->
+                                        <input class="btn-submit mt-3" type="button" id="btn1" value="Submit" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="box">
+                            <div class="col-12 my-2">
+                                <div class="row">
+                                    <div class="col-25">Current Time <span class="sp">:</span></div>
+                                    <div class="col-75"><label id="itime"></label></div>  
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="row">
+                                    <div class="col-25">Nama <span class="sp">:</span></div>
+                                    <div class="col-75"><label class="inama"></label></div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="row">  
+                                    <div class="col-25">Tanggal Lahir <span class="sp">:</span></div>
+                                    <div class="col-75"><label id="itanggal"></label></div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="row">  
+                                    <div class="col-25">Jenis Kelamin <span class="sp">:</span></div>
+                                    <div class="col-75"><label id="ijkel"></label></div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="row">  
+                                    <div class="col-25">Pesan <span class="sp">:</span></div>
+                                    <div class="col-75"><label id="ipesan"></label></div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="mb-0">Created by <b>Fadhil</b></p>
+    </footer>
 </body>
 </html>
