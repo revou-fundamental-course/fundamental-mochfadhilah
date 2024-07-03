@@ -73,19 +73,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // slider
 let slideIndex = 1;
 showSlides(slideIndex);
-
+// sider tombol next dan back
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
-
+// sider tombol dot
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
+// fungsi slider
 function showSlides(n) {
-  
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("myslides");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
