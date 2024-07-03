@@ -158,7 +158,8 @@ footer {
     border:rgb(168, 166, 166) 2px solid;
     border-radius:7px;
     padding:5px 3px;
-    font-size:15px;}
+    font-size:15px;
+  }
 /* untuk row */
 .row::after {
     content: "";
@@ -405,4 +406,7 @@ body {
         justify-content:flex-start;
         display:block;
     }
+  .form-control {
+    width: 95%; 
+  }
 }
