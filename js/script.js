@@ -6,6 +6,8 @@ function btnf() {
     const tanggal = document.getElementById('tanggal');
     const pesan = document.getElementById('pesan');
     const jkel = document.getElementsByName('jkel');
+    const radio1 = document.getElementById('r1');
+    const radio2 = document.getElementById('r2');
     const tgl = new Date;
     // validation
     const enama = document.getElementById('error-name');
@@ -54,6 +56,11 @@ function btnf() {
     ejkel.innerHTML ="";
     epesan.innerHTML ="";
     // box variabel
+    if (radio1.checked == true) {
+      radio1.checked = false;
+    } else {
+      radio2.checked =false;
+    }
     itime.innerHTML = tgl;
     inama[0].innerHTML = nama.value;
     inama[1].innerHTML = nama.value;
